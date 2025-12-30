@@ -21,29 +21,13 @@
       background-size:contain;
     }
     h1 { color:#4da3ff; }
-    p, label { color:#a4a9c4; }
-    form {
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      margin-top:20px;
+    p { color:#a4a9c4; line-height:1.6; }
+    a.mail {
+      color:#4da3ff;
+      text-decoration:none;
+      font-weight:bold;
     }
-    input, textarea {
-      padding:10px;
-      border-radius:8px;
-      border:none;
-      font-family:inherit;
-    }
-    button {
-      background:#4da3ff;
-      color:#050712;
-      padding:10px 20px;
-      border:none;
-      border-radius:999px;
-      font-weight:600;
-      cursor:pointer;
-    }
-    button:hover { background:#82c3ff; }
+    a.mail:hover { text-decoration:underline; }
     .backlink {
       display:inline-block;
       margin-top:30px;
@@ -61,21 +45,11 @@
   <section class="hero">
     <h1>Contact</h1>
     <p>Heb je vragen, opmerkingen of wil je meer weten over mijn werk en biljartsystemen? 
-       Vul het formulier hieronder in en ik neem zo snel mogelijk contact met je op.</p>
+       Je kunt mij rechtstreeks bereiken via e‑mail:</p>
 
-    <!-- Contactformulier met jouw e-mail -->
-    <form action="mailto:J.Sopamena1965@gmail.com" method="post" enctype="text/plain">
-      <label for="naam">Naam:</label>
-      <input type="text" id="naam" name="naam" required>
-
-      <label for="email">E‑mail:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="bericht">Bericht:</label>
-      <textarea id="bericht" name="bericht" rows="6" required></textarea>
-
-      <button type="submit">Verstuur</button>
-    </form>
+    <p>
+      📧 <a href="mailto:J.Sopamena1965@gmail.com" class="mail">J.Sopamena1965@gmail.com</a>
+    </p>
 
     <a href="index.html" class="backlink">← Terug naar startpagina</a>
   </section>
