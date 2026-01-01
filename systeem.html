@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Systeemdetail</title>
+  <link href="assets/global.css" rel="stylesheet">
+  <script src="assets/systems.js"></script>
+  <script src="assets/app.js"></script>
+  <!-- Beveiliging tegen indexering -->
+  <meta name="robots" content="noindex, noarchive, nosnippet">
+</head>
+<body onload="Platform.initDetail()">
+  <header>
+    <h1 id="title"></h1>
+  </header>
+
+  <main class="detail">
+    <div>
+      <div class="panel">
+        <h2>Beschrijving</h2>
+        <p id="desc"></p>
+      </div>
+
+      <div class="panel">
+        <h2>Diagram</h2>
+        <div class="diagram">
+          <p>Plaats hier een visualisatie of animatie van de looplijn</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h2>Video</h2>
+        <div class="video">
+          <video width="100%" height="260" controls>
+            <source src="video/training1.mp4" type="video/mp4">
+            <track src="video/training1-nl.srt" kind="subtitles" srclang="nl" label="Nederlands">
+          </video>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Notities</h2>
+        <p class="muted">Voeg hier correcties, formules of varianten toe.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Johan Sopamena — Alle rechten voorbehouden
+  </footer>
+</body>
+</html>
